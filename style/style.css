@@ -54,11 +54,11 @@ section{
 .nav-princ{
     grid-column: 2;
     grid-row: 1 /2; 
-    position: fixed;
+    position: relative;
     top:0vh;
     right: 0vh;
     background-color: #212529;
-    width: 70px;
+    width: 75px;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -70,7 +70,6 @@ section{
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
-    overflow: clip ;
 }
 .onglet-up, .onglet-down{
     color:#CDD0D2;
@@ -78,7 +77,7 @@ section{
     box-shadow: none;
     font-size: 1.1em;
     width: 70px;
-    height: 50%;
+    height: 120px;
     border: 2px solid #333333;
 }
 
@@ -122,20 +121,20 @@ section{
 }
 
 .onglet1{
-    position: absolute;
+    position: relative;
     z-index: 3;
 } 
 
 .onglet2{
     position:relative;
     z-index: 2;
-    margin-top: 130%;
+    margin-top: -30%;
 }
 
 .onglet3{
-    position:absolute;
+    position:relative;
     z-index: 1;
-    margin-top: 260%;
+    margin-top: -30%;
 }
 
 .onglet4{
