@@ -70,7 +70,21 @@ section{
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
+    transition-property: height;
+    transition-duration: 0.5s;
 }
+
+.navbar-sup{
+    margin-bottom: 0px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    transition-property: height;
+    transition-duration: 0.5s;
+}
+
 .onglet-up, .onglet-down{
     color:#CDD0D2;
     background-color: #394984;
@@ -175,13 +189,7 @@ section{
     bottom: 0px
 }
 
-@media screen and (max-height: 700px){
+@media screen and (max-height: 650px){
 
-    .hidden{
-        display: none;
-    }
 
-    .collapse{
-        display: block;
-    }
 }
