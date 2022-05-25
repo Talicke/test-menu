@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="style.js"></script>
     <title>Acceuil</title>
 </head>
 
@@ -15,7 +16,7 @@
 </header>
 
 <body>
-    <nav class="nav-princ">
+    <nav class="nav-princ hidden">
         <div class="navbar-sup">
             <button type="submit" class="onglet-up onglet1">Compte</button>
             <button type="submit" class="onglet-up onglet2">Activités</button>
@@ -30,7 +31,20 @@
         </div>
     </nav>
 
-<script src="style.js">
-    extendNav(".navbar-sup","50vh","30vh");
-    extendNav(".navbar-down","50vh","30vh");
+    <nav class="nav-princ collapse">
+        <button type="submit" class="onglet-up onglet-collapse" id="Mcompte">menu compte</button>
+        <div class="navbar-sup">
+            <button type="submit" class="onglet-up onglet1">Compte</button>
+            <button type="submit" class="onglet-up onglet2">Activités</button>
+            <button type="submit" class="onglet-up onglet3">Projets</button>
+        </div>
+        <button type="submit" class="nav-compte-mid onglet4"><i class="fa-solid fa-circle-plus"></i></button>
+        <div class="navbar-down collapse">
+            <button type="submit" class="onglet-down" id="onglet-liste">liste</button>
+        </div>
+    </nav>
+
+<script>
+    extendNav('.navbar-sup','30vh', '50vh')
+    extendNav('.navbar-down','30vh', '50vh')
 </script>

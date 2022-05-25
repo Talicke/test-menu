@@ -1,25 +1,9 @@
-// console.log('hello');
-
-
-let elemt = document.querySelector(".navbar-sup");
-
-elemt.addEventListener("mouseenter", function() {
-    elemt.style.height = "50vh";
-})
-
-elemt.addEventListener("mouseleave", function() {
-    elemt.style.height = "30vh";
-})
-
-
-
-
-let element = document.querySelector(".navbar-down");
-
-element.addEventListener("mouseenter",function(){
-    element.style.height = "50vh";
-})
-
-element.addEventListener("mouseleave", function(){
-    element.style.height = "30vh";
-})
+function extendNav(nav, sizeH, sizeL){
+    let elem = document.querySelector(`${nav}`);
+    elem.addEventListener("mouseenter", function(){
+        elem.style.height = sizeL;
+    })
+    elem.addEventListener("mouseleave", function(){
+        elem.style.height = sizeH;
+    })
+}
