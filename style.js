@@ -1,9 +1,11 @@
-function extendNav(nav, sizeH, sizeL){
-    let elem = document.querySelector(`${nav}`);
-    elem.addEventListener("mouseenter", function(){
-        elem.style.height = sizeL;
+function extendNav(leaveMenu, showMenu, nav, sizeH, sizeL){
+    let elemNav = document.querySelector(`${nav}`);
+    let elemShow = document.querySelector(`${showMenu}`)
+    let elemHide = document.querySelector(`${leaveMenu}`)
+    elemShow.addEventListener("mouseenter", function(){
+        elemNav.style.height = sizeL;
     })
-    elem.addEventListener("mouseleave", function(){
-        elem.style.height = sizeH;
+    elemHide.addEventListener("mouseleave", function(){
+        elemNav.style.height = sizeH;
     })
 }

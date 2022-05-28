@@ -11,12 +11,12 @@
 </head>
 
 <header>
-    <img src="./asset/images/Logo GDA.png" alt="Logo de GDA" id="logo">
+    <img src="./Images/Logo GDA.png" alt="Logo de GDA" id="logo">
     <h1>Prise de note</h1>
 </header>
 
 <body>
-    <nav class="nav-princ hidden">
+    <nav class="nav-princ collapse">
         <div class="navbar-sup">
             <button type="submit" class="onglet-up onglet1">Compte</button>
             <button type="submit" class="onglet-up onglet2">Activités</button>
@@ -31,20 +31,28 @@
         </div>
     </nav>
 
-    <nav class="nav-princ collapse">
-        <button type="submit" class="onglet-up onglet-collapse" id="Mcompte">menu compte</button>
-        <div class="navbar-sup">
-            <button type="submit" class="onglet-up onglet1">Compte</button>
-            <button type="submit" class="onglet-up onglet2">Activités</button>
-            <button type="submit" class="onglet-up onglet3">Projets</button>
+    <nav class="nav-princ hidden">
+        <div id="navbar-sup-collapse">
+            <button type="submit" class="onglet-up onglet-collapse-sup" id="Mcompte">-></button>
+            <div class="navbar-sup" id="extend-nav-sup">
+                <button type="submit" class="onglet-up-hidden onglet1">Compte</button>
+                <button type="submit" class="onglet-up-hidden onglet2">Activités</button>
+                <button type="submit" class="onglet-up-hidden onglet3">Projets</button>
+            </div>
         </div>
         <button type="submit" class="nav-compte-mid onglet4"><i class="fa-solid fa-circle-plus"></i></button>
-        <div class="navbar-down collapse">
-            <button type="submit" class="onglet-down" id="onglet-liste">liste</button>
+        <div id="navbar-down-collapse">
+            <button type="submit" class="onglet-down onglet-collapse-down" id="Mliste">-></button>
+            <div class="navbar-down" id="extend-nav-down">
+                <button type="submit" class="onglet-down-hidden onglet8">RDV</button>
+                <button type="submit" class="onglet-down-hidden onglet7">Rappel</button>
+                <button type="submit" class="onglet-down-hidden onglet6">Taches</button>
+                <button type="submit" class="onglet-down-hidden onglet5">Notes</button>
+            </div>
         </div>
     </nav>
 
 <script>
-    extendNav('.navbar-sup','30vh', '50vh')
-    extendNav('.navbar-down','30vh', '50vh')
+    extendNav('#navbar-sup-collapse','#Mcompte','#extend-nav-sup','15vh', '45vh');
+    extendNav('#navbar-down-collapse','#Mliste','#extend-nav-down', '15vh', '45vh');
 </script>
