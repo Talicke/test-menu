@@ -103,12 +103,11 @@ section{
 
 #extend-nav-sup{
     height: 15vh;
-    margin-top: 6vh;
 }
 
 #extend-nav-down{
     height: 15vh;
-    margin-bottom: 10vh;
+    margin-bottom: 6vh;
 }
 
 .nav-compte-mid{
@@ -154,16 +153,20 @@ section{
 }
 
 #Mcompte{
-    height:50px;
+    height:15vh;
     position: fixed;
     z-index: 10;
+    transition-property: height;
+    transition-duration: 0.5s;
 }
 
 #Mliste{
-    height: 50px;
+    height: 22vh;
     position: fixed;
     bottom:0vh;
     z-index: 10;
+    transition-property: height;
+    transition-duration: 0.5s;
 }
 
 .onglet1{
