@@ -209,28 +209,28 @@ section{
     margin-bottom: -30%;
 }
 
-.hidden{
+.hidden-height{
     display: none;
 }
 
 @media screen and (max-height: 500px){
 
-    .hidden{
+    .hidden-height{
         display: block;
     }
 
-    .collapse{
+    .collapse-height{
         display: none;
     }
 }
 
 @media screen and (max-width: 900px){
 
-    .hidden{
+    .hidden-width{
         display: block;
     }
 
-    .collapse{
+    .collapse-width{
         display: none;
     }
 }

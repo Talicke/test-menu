@@ -1,20 +1,23 @@
-.bouton-regl{
-    background-color: #212529;
-    width: 150px;
-    height:50px;
-    border: 2px solid #394984;
-    border-radius: 5px 30px 5px 5px;
-    color: white;
-    box-shadow: 4px 0px #00000040;
-}
 .nav-regl{
     background-color: #333333;
     grid-column: 1;
     grid-row: 2;
     display: flex;
     flex-direction: row;
+    position: relative;
+    margin-left: 5%;
 }
 
+.bouton-regl{
+    background-color: #212529;
+    width: 9vw;
+    height:50px;
+    border: 2px solid #394984;
+    border-radius: 5px 30px 5px 5px;
+    color: white;
+    box-shadow: 4px 0px #00000040;
+    font-size: 1.2em;
+}
 
 .bouton-regl:hover{
     background-color: #394984;
@@ -26,15 +29,7 @@
     box-shadow: 4px 0px #00000040;
 }
 
-.nav-regl{
-    background-color: #333333;
-    grid-column: 1;
-    grid-row: 2;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-left: 5%;
-}
+
 
 #ong-regl-note{
     position:relative;
@@ -44,17 +39,17 @@
 #ong-regl-tache{
     position: relative;
     z-index: 3;
-    margin-left: -10%;
+    margin-left: -7%;
 }
 
 #ong-regl-rappel{
     position: relative;
     z-index: 2;
-    margin-left: -10%;
+    margin-left: -7%;
 }
 
 #ong-regl-RDV{
     position: relative;
     z-index: 1;
-    margin-left: -10%;
+    margin-left: -7%;
 }
