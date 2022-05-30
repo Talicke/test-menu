@@ -8,16 +8,10 @@
     padding: 0;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: auto 75px;
-    grid-template-rows: 200px, auto;
-}
-
 body{
     display: grid;
     grid-template-columns: auto 75px;
-    grid-template-rows: auto auto;
+    grid-template-rows: 20vh auto;
     background-color: #333333;
 }
 
@@ -220,6 +214,17 @@ section{
 }
 
 @media screen and (max-height: 500px){
+
+    .hidden{
+        display: block;
+    }
+
+    .collapse{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
 
     .hidden{
         display: block;
