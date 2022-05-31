@@ -4,8 +4,24 @@
     grid-row: 2;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     position: relative;
+    width: 80vw;
+    height: 50px;
     margin-left: 5%;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+
+#Mreglage{
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.collapse-regle-nav{
+    width: 30vh;
 }
 
 .bouton-regl{
@@ -21,15 +37,8 @@
 
 .bouton-regl:hover{
     background-color: #394984;
-    width: 150px;
-    height:50px;
     border: 2px solid #212529;
-    border-radius: 5px 30px 5px 5px;
-    color: white;
-    box-shadow: 4px 0px #00000040;
 }
-
-
 
 #ong-regl-note{
     position:relative;

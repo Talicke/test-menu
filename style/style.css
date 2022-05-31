@@ -213,6 +213,10 @@ section{
     display: none;
 }
 
+.hidden-width{
+    display: none;
+}
+
 @media screen and (max-height: 500px){
 
     .hidden-height{
