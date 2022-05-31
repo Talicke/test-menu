@@ -19,7 +19,7 @@ header{
     grid-column: 1;
     grid-row: 1;
     background-color: #CDD0D2;
-    width: 80%;
+    width: 80vw;
     max-height: 10vh;
     border-radius: 30px;
     display: flex;
@@ -35,7 +35,8 @@ h1{
     grid-column: 1;
     grid-row: 2;
     font-family: 'Cabin Sketch', cursive;
-    font-size: 15vh;
+    font-size: 5em;
+    margin: auto left auto auto;
 }
 
 #logo{
@@ -228,13 +229,9 @@ section{
     }
 }
 
+
 @media screen and (max-width: 900px){
-
-    .hidden-width{
-        display: block;
-    }
-
-    .collapse-width{
-        display: none;
+    h1{
+        font-size: 3.5em;
     }
 }
